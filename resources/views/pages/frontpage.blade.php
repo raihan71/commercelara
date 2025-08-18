@@ -7,6 +7,18 @@
 @section('meta_keywords', 'ecommerce, online shopping, deals, products')
 
 @section('content')
+
+<!-- Frontpage Content -->
+<div id="home">
+    <section class="bg-gradient-to-r from-blue-600 to-green-700 text-white p-8 rounded-xl shadow-lg md:p-12 mb-8">
+        <div class="max-w-3xl">
+            <h1 class="text-3xl md:text-5xl font-bold mb-4">Gratis Ongkir Setiap Hari</h1>
+            <p class="text-xl mb-6 opacity-90">Belanja sekarang dan nikmati gratis ongkir setiap hari di Commercelara!</p>
+            <button class="bg-white text-blue-600 px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-colors">Belanja Sekarang</button>
+        </div>
+    </section>
+</div>
+
 <div class="container mx-auto px-4 py-8">
     <h1 class="text-3xl font-bold mb-4">Welcome to Commercelara</h1>
     <p class="mb-6">Your one-stop shop for the best products and deals online.</p>

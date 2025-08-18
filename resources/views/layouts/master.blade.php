@@ -16,7 +16,7 @@
   <script src="https://cdn.tailwindcss.com"></script>
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
 </head>
-<body class="bg-gray-100">
+<body class="bg-gray-50 antialiased">
 
   <!-- Header -->
   <nav class="bg-white shadow-sm border-b border-gray-200 sticky top-0 z-50">
@@ -44,11 +44,13 @@
             <span class="absolute -top-1 -right-1 items-center justify-center w-5 h-5 flex bg-red-500 text-white text-xs font-bold rounded-full">0</span>
           </a>
         </div>
+      <a href="" class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600">Login</a>
+
     </div>
   </nav>
 
   <!-- Main Content -->
-  <main role="main">
+  <main role="main" class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
     @yield('content')
   </main>
 
