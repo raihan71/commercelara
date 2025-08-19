@@ -67,7 +67,7 @@
                         <span class="absolute top-2 right-2 bg-blue-500 text-white text-xs font-semibold px-2 py-1 rounded">Diskon 20%</span>
                         <img src="{{ asset('images/urban-jacket.jpeg') }}" alt="Product Image" class="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300">
                         <div class="absolute inset-0 bg-black bg-opacity-20 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                            <a href="#" class="bg-white text-gray-900 px-4 py-2 rounded-md opacity-0 group-hover:opacity-100 transition-opacity duration-300 hover:bg-gray-100">Lihat Detail</a>
+                            <a href="{{route('product.show', $product)}}" class="bg-white text-gray-900 px-4 py-2 rounded-md opacity-0 group-hover:opacity-100 transition-opacity duration-300 hover:bg-gray-100">Lihat Detail</a>
                         </div>
                     </div>
                     <div class="p-4">

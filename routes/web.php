@@ -17,6 +17,10 @@ Route::get('/', function () {
     return view('pages.frontpage');
 });
 
+Route::get('/product/{id}', function ($id) {
+    return view('pages.products.detail', ['id' => $id]);
+})->name('product.show');
+
 Route::get('/search', function () {
     return 'hello';
 })->name('search');
