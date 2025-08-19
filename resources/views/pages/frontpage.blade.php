@@ -33,21 +33,21 @@
     </section>
 
     <!-- Filter Section -->
-    <div class="pt-1 mb-6 flex flex-wrap gap-2.5">
-        <select class="px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500">
+    <div class="grid md:grid-cols-3 w-full md:w-1/2 pt-1 mb-6 gap-3">
+        <select class="px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 w-full">
             <option value="all">Semua Harga</option>
             <option value="under50">Di bawah Rp50.000</option>
             <option value="50to100">Rp50.000 - Rp100.000</option>
             <option value="100to200">Rp100.000 - Rp200.000</option>
             <option value="above200">Di atas Rp200.000</option>
         </select>
-        <select class="px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500">
+        <select class="px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 w-full">
             <option value="all">Semua Kategori</option>
             <option value="clothing">Pakaian</option>
             <option value="electronics">Elektronik</option>
             <option value="home">Perlengkapan Rumah</option>
         </select>
-        <select class="px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500">
+        <select class="px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 w-full">
             <option value="all">Semua Rating</option>
             <option value="1">1 Star</option>
             <option value="2">2 Stars</option>

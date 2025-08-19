@@ -2,7 +2,7 @@
 <html lang="{{ app()->getLocale() }}">
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <!-- SEO Meta Tags -->
   <meta name="description" content="@yield('meta_description', 'Default description for your website.')">
@@ -12,7 +12,6 @@
   <title>@yield('title', 'Commercelara')</title>
 
   <!-- CSS -->
-  <link rel="stylesheet" href="{{ asset('css/app.css') }}">
   <script src="https://cdn.tailwindcss.com"></script>
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
 </head>
@@ -24,7 +23,9 @@
       <div class="flex justify-between items-center h-16">
         <!-- Logo and Branding -->
         <div class="flex items-center">
-          <a class="text-2xl font-bold text-blue-600" href="{{ url('/') }}" class="text-xl font-semibold text-gray-800">Commercelara</a>
+          <div class="flex-shrink-0">
+            <a class="text-2xl font-bold text-blue-600" href="{{ url('/') }}" class="text-xl font-semibold text-gray-800">Commercelara</a>
+          </div>
         </div>
         <!-- Search Bar -->
         <div class="hidden md:block flex-1 max-w-lg mx-8">
@@ -37,14 +38,14 @@
           </div>
         </div>
         <!-- Navigation Links -->
-        <div class="flex items-center space-x-4">
+        <div class="flex items-center space-x-2 md:space-x-4">
           <a href="" class="text-gray-700 hover:text-blue-600 px-3 py-2 rounded-md font-medium">Beranda</a>
           <a href="" class="relative text-gray-700 hover:text-blue-600 px-3 py-2 rounded-md font-medium">
             <i class="fas fa-shopping-cart"></i>
             <span class="absolute -top-1 -right-1 items-center justify-center w-5 h-5 flex bg-red-500 text-white text-xs font-bold rounded-full">0</span>
           </a>
         </div>
-      <a href="" class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600">Login</a>
+      <a href="" class="hidden md:block bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600">Login</a>
 
     </div>
   </nav>
@@ -94,6 +95,5 @@
   </footer>
 
   <!-- Scripts -->
-  <script src="{{ asset('js/app.js') }}"></script>
 </body>
 </html>
