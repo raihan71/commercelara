@@ -67,9 +67,11 @@
               </div>
           </div>
       </div>
-      <button class="w-full bg-blue-600 text-white py-3 rounded-md hover:bg-blue-700 transition-colors font-semibold mt-4">
+      <a href="{{route('checkout.index')}}">
+        <button class="w-full bg-blue-600 text-white py-3 rounded-md hover:bg-blue-700 transition-colors font-semibold mt-4">
           Proceed to Checkout
-      </button>
+        </button>
+      </a>
     </section>
   </div>
 </div>

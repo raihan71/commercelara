@@ -25,6 +25,10 @@ Route::get('/cart', function () {
     return view('pages.cart');
 })->name('cart.index');
 
+Route::get('/checkout', function () {
+    return view('pages.order.create');
+})->name('checkout.index');
+
 Route::get('/search', function () {
     return 'hello';
 })->name('search');
