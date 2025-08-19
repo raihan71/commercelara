@@ -13,7 +13,7 @@
         </div>
 
         <!-- Product Info -->
-        <div class="md:w-1/2">
+        <div class="md:w-1/2 bg-white rounded-lg shadow-md p-8">
             <h1 class="text-3xl font-bold text-gray-900 mb-2">Product Name</h1>
             <div class="flex items-center mb-4">
                 <i class="fas fa-star-half-alt text-yellow-400"></i>
@@ -26,14 +26,18 @@
                 <span class="text-sm text-gray-500">2 tersedia</span>
             </div>
             <div class="flex space-x-4">
-                <button
-                        class="flex-1 bg-blue-600 text-white py-4 px-6 rounded-md hover:bg-blue-700 transition-colors font-semibold">
-                    Tambah ke Keranjang
-                </button>
-                <button
-                        class="flex-1 bg-emerald-600 text-white py-4 px-6 rounded-md hover:bg-emerald-700 transition-colors font-semibold">
-                    Beli Sekarang
-                </button>
+                <a href="{{route('cart.index')}}">
+                    <button
+                            class="flex-1 bg-blue-600 text-white py-4 px-6 rounded-md hover:bg-blue-700 transition-colors font-semibold">
+                        Tambah ke Keranjang
+                    </button>
+                </a>
+                <a href="{{route('checkout.index')}}">
+                    <button
+                            class="flex-1 bg-emerald-600 text-white py-4 px-6 rounded-md hover:bg-emerald-700 transition-colors font-semibold">
+                        Beli Sekarang
+                    </button>
+                </a>
             </div>
         </div>
     </section>
@@ -43,7 +47,7 @@
         <h2 class="text-2xl font-bold mb-4">Ulasan Teratas</h2>
         <div class="space-y-4">
             @foreach (['Great product!', 'Very satisfied with my purchase.', 'Will buy again!'] as $review)
-                <div class="border border-gray-200 p-4 rounded-lg shadow-sm">
+                <div class="bg-white border border-slate-200 p-4 rounded-lg shadow-sm">
                     <p class="text-gray-800">{{ $review }}</p>
                 </div>
             @endforeach
@@ -54,7 +58,7 @@
         <h2 class="text-2xl font-bold text-gray-900 mb-6">Produk Terkait</h2>
         <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
             @foreach ([1, 2, 3] as $relatedProduct)
-                <div class="border border-gray-200 p-4 rounded-lg shadow-sm">
+                <div class="bg-white border border-slate-200 p-4 rounded-lg shadow-sm">
                     <img src="{{ asset('images/urban-jacket.jpeg') }}" alt="Related Product" class="w-full h-auto rounded-lg mb-4">
                     <div class="flex flex-wrap items-center justify-between">
                         <div class="block">

@@ -19,7 +19,7 @@
     </div>
     @else
       @foreach ([1,2,3,4] as $cartItem )
-        <div class="flex items-center py-4 border-b border-gray-200">
+        <div class="flex items-center py-4 border-b border-slate-200">
           <img src="{{asset('images/urban-jacket.jpeg')}}" alt="image-produk" class="w-16 h-16 object-cover rounded-md mr-4">
           <div class="flex-1">
               <h3 class="font-semibold text-gray-900">Product</h3>
@@ -46,7 +46,7 @@
       @endforeach
     @endif
     </section>
-    <section id="cartSummary" class="mt-6 pt-6 border-t border-gray-200">
+    <section id="cartSummary" class="mt-6 pt-6 border-t border-slate-200">
       <div class="space-y-2">
           <div class="flex justify-between">
               <span>Subtotal:</span>
@@ -60,7 +60,7 @@
               <span>Shipping:</span>
               <span>FREE</span>
           </div>
-          <div class="border-t border-gray-200 pt-2">
+          <div class="border-t border-slate-200 pt-2">
               <div class="flex justify-between font-bold text-lg">
                   <span>Total:</span>
                   <span>$${total.toFixed(2)}</span>
