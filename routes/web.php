@@ -18,8 +18,12 @@ Route::get('/', function () {
 });
 
 Route::get('/product/{id}', function ($id) {
-    return view('pages.products.detail', ['id' => $id]);
+    return view('pages.product.detail', ['id' => $id]);
 })->name('product.show');
+
+Route::get('/cart', function () {
+    return view('pages.cart');
+})->name('cart.index');
 
 Route::get('/search', function () {
     return 'hello';

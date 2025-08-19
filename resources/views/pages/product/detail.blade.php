@@ -5,8 +5,8 @@
 @section('meta_keywords', 'product detail, ecommerce, online shopping, reviews')
 @section('content')
 <!-- Product Detail Page -->
-<div class="container mx-auto p-6">
-    <div class="flex flex-col md:flex-row gap-6">
+<div id="productDetail" class="container mx-auto p-6">
+    <section class="flex flex-col md:flex-row gap-6">
         <!-- Product Image -->
         <div class="md:w-1/2">
             <img src="{{ asset('images/urban-jacket.jpeg') }}" alt="Product Image" class="w-full h-auto rounded-lg shadow-md">
@@ -36,7 +36,7 @@
                 </button>
             </div>
         </div>
-    </div>
+    </section>
 
     <!-- Reviews Section -->
     <section class="mt-8">

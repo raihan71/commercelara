@@ -40,13 +40,12 @@
         <!-- Navigation Links -->
         <div class="flex items-center space-x-2 md:space-x-4">
           <a href="" class="text-gray-700 hover:text-blue-600 px-3 py-2 rounded-md font-medium">Beranda</a>
-          <a href="" class="relative text-gray-700 hover:text-blue-600 px-3 py-2 rounded-md font-medium">
+          <a href="{{route('cart.index')}}" class="relative text-gray-700 hover:text-blue-600 px-3 py-2 rounded-md font-medium">
             <i class="fas fa-shopping-cart"></i>
             <span class="absolute -top-1 -right-1 items-center justify-center w-5 h-5 flex bg-red-500 text-white text-xs font-bold rounded-full">0</span>
           </a>
         </div>
-      <a href="" class="hidden md:block bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600">Login</a>
-
+      <a href="" class="hidden md:block bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 transition-colors">Login</a>
     </div>
   </nav>
 
